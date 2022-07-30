@@ -20,5 +20,22 @@ COMEÇANDO A CONSTRUÇÃO DE UM SITE
 
 - para testar o font-awesome eu chamei uma dos icones dele com a tag  <i class="fab fa-instagram"></i>
 
+- agora a construção da barra de navegação do site 
+
+- agora uma segunda barra de vagação com as redes sociais da empresa (os links não vao ter os nomes so os icones do fa)
+
+- embaixo da tag herader eu criei a tag main onde vai ficar a galeria 
+
+- dentro da gaeria eu coloquei 9 cards depois eu fiz o footer 
+
+- depois da estrtura e elementos html feitos 
+
+- agora eu volto pro sass para aplicar os estilos  
+
+
+
+
+
+
 
 

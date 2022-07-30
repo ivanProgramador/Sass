@@ -1,0 +1,42 @@
+instalando o sass 
+ A instalação no meu caso vai ser feita pelo npm, que para rodar depende o node
+ no site do sass quando clica em install aparecem duas opções de instalação ou você
+ baixa um app desktop ou pode instalar ele átraves de linha de comando pelo npm.
+
+ testando se o node esta instalado eoi npm tambem(e smpre importante testar os dois)
+
+ node -v
+ npm  -v
+
+ instalando o sass de forma global 
+
+ npm install -g sass 
+
+ testando se o sass esta instalado
+
+ sass --version 
+
+
+ extenções que pódem ajudar durante um porjeto com sass 
+
+ - live server(cria um servidor temporario assim da para ver as alterações) 
+
+ - sass(ele otimiza as cores para ajudar na sintaxe)
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+

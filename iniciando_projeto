@@ -1,0 +1,24 @@
+
+COMEÇANDO A CONSTRUÇÃO DE UM SITE 
+
+- trouxe a pasta de imagens do porjeto para as dependencias(embora eu não va usar agora e um passo importante)
+
+- Depois que o sass esta funcionando corretamente com pelo menos um estilo aplicado e funcionando 
+
+- O proximo passo e paegar as bibliotecas por cdn que vão ser usadas lembrando sempre de organizar a tag head para entender
+  para que serve cada link 
+
+- nesse projeto vou usar google fonts,font awesome
+
+- coloquei o google fonts 
+
+- para usar o font awesome a mais burocratico tem que criar conta, mas existe um jeto mais facil de fazer isso usando o site 
+
+  https://cdnjs.com/
+
+- pesquisa pelo nome font awesome e vai aparcer uma lista de links cdn cada um tem uma versão nesse caso eu copiei o primeiro link 
+
+- para testar o font-awesome eu chamei uma dos icones dele com a tag  <i class="fab fa-instagram"></i>
+
+
+

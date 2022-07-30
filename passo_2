@@ -1,0 +1,56 @@
+----------------------------------------------------------------------------------------
+ sass é uma maqira mais pordutiva de desenvolver o css existem 2 arquivos o css eo scss 
+ 
+ scss 
+  aceita averiaveis, aceita fluxos de descisão, aceita interpolação como um liguagem mesmo, depois ele gera um codigo css 
+  compativel com o codigo escrito em sass, é basicamente uma maneira bem produtiva de desenvolver e controlar o css.
+
+ css 
+  linguagem da folha de estilo 
+
+antes de começar qualquer porjeto que vai usar sass os passos no inicio do arquivo precisam ser feitos 
+------------------------------------------------------------------------------------------
+
+depois de criar o index.html, com um link apontando pára uma pasta css/styles.css
+crie uma pasta chamada sass e dentro dela um aruivo chamado styles.sass
+
+o sass e mais pratico que css no codigo abaixo eu coloco estilo em uma div não precisa das chaves
+so o fato de identar ele entende que e para o elemento de cima
+
+
+div 
+  background: red
+
+
+Por se tratar de um pre-processador ele precisa gerar um outro arquivo css para que esse seja usado pela pagina 
+para tornar o processo mais pratico existe um comando que faz isso de forma automática.
+
+o comando abaixo tem dois parametros no pirmeiro ele recebe o camiho onde esta o aruivo que ele vai monitorar 
+no caso
+  sass/styles.sass
+
+com base nisso o segundo aparmetro diz oque ele vai fazer, que seria criar uma pasta e um arquivo css desntro dela 
+
+  css/styles.css
+
+apartir dai tudo oque for escrito dento do arquivo sass vai ser convertido para css e colocado dentro do aqruivo que ele esta assisitindo 
+
+
+comando 
+
+ sass --watch sass/styles.sass:css/styles.css
+
+
+ para ver as modificações que foram feitas usamos a extenção live server , mas e so pra reproduzir o html mesmo em tempo real 
+ usando o comando / eu prefiro abrir outro terminal para não aparar o assitidor de sass 
+
+ selecionar o arquivo html e escolher a opção open with live server 
+
+ 
+
+
+
+
+
+
+

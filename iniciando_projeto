@@ -33,6 +33,89 @@ COMEÇANDO A CONSTRUÇÃO DE UM SITE
 - agora eu volto pro sass para aplicar os estilos  
 
 
+------------------------------------------------------------------------------------------------
+
+As variaveis em sass devem ficar em um arquivo separado em um arquivo chamado _variables.sass (siga esse padrão)
+
+-  criei as variveis no sass 
+
+- elas estão em arquivo separado para fazer o sass ver essas variveis tem que imnportar usando @use 'variables' (não coloca o underline )
+
+vacilo "aconteceu um erro quando eu estava tentando usar as variaveis do arquivo _varibles.sass porque eu esqueci de salvar as alterações no arquivo"
+-------------------------------------------------------------------------------------------------------------
+
+- criei um arquivo chamado _mixins.sass
+  um mixin e uma diretiva que evita a repetição de codigo como se fosse uma avrievel que guarada verias coinfigurações 
+  que ficariam redundantes. o nme do meu mixin é cointainer e embaixo eu coloquei as configurações padrão dele 
+
+@mixin container 
+   max-width: variables.$container-width 
+   padding: 1.5 rem 0
+   margin: 0 auto
+
+- usando o misin no header 
+
+  .header
+
+        display: flex
+        justify-content: space-between
+        @include mixins.container
+
+Elementos compostos no caso eu tenho uma div que a classe dela e 
+gallery e dentro dela eu tenho um card que se chama gallery-card 
+e dentro del eu tenho um titulo que se chama galery-card-title e dentro 
+do card eu tenho um button e acada vewz que eu faço referencioa a um 
+elemento aninhado eu preciso recuar espaço a exemplo do codigo abaixo 
+onde gallery e o elemento princiapl eo card e um sub elemento o sass 
+sabe que um esta dentro do outro usando a identação para se guiar.  
+
+
+
+
+.gallery
+    
+  @include mixins.flex-center
+  @include mixins.container
+  flex-wrap: wrap
+  justify-content: space-between
+  padding: 0
+
+  
+
+  &-card // .gallery-card
+    width: 31%
+    height: 400px
+    margin-bottom: 4%
+    @include mixins.flex-center
+    flex-direction: column
+    color: variables.$text-color
+
+    &-title 
+      font-size: 2rem
+      font-weight: 300
+      margin-bottom: 1rem
+
+    &-btn 
+       @include mixins.flex-center
+       padding: .6rem 2rem
+       border: 2px solid variables.$primary-color
+       color: variables.$primary-color
+       font-weight: 400
+       text-transform: uppercase
+       letter-spacing: 1px
+
+       &:hover
+         background-color: variables.$primary-color 
+         color: variables.$bg-color 
+    
+
+
+
+
+
+
+
+
 
 
 
